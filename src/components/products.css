@@ -1,0 +1,61 @@
+@import "../global.css";
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+.products .box-container .box {
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.products .box-container .box .bxs-heart,
+.products .box-container .box .bxs-low-vision {
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+.products .box-container .box .bxs-heart:hover,
+.products .box-container .box .bxs-low-vision:hover {
+  background: var(--green);
+  color: #fff;
+}
+.products .box-container .box .bxs-heart {
+  right: -15rem;
+}
+.products .box-container .box .bxs-low-vision {
+  right: -15rem;
+}
+.products .box-container .box:hover .bxs-heart {
+  left: 1.5rem;
+}
+.products .box-container .box:hover .bxs-low-vision {
+  right: 1.5rem;
+}
+.products .box-container .box img {
+  height: 17rem;
+  margin: 1rem 0;
+}
+.products .box-container .box .stars i {
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+.products .box-container .box span {
+  color: var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}

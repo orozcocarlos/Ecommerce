@@ -1,0 +1,160 @@
+@import "../global.css";
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    background:#eee;
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo .icon-logo{
+    color:var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .icons a {
+    cursor: pointer;
+    margin-left:2rem;
+    /* height:4.5rem;
+    line-height: 4.5rem;*/
+    width:5rem; 
+    line-height: 4.5rem;
+    height:5rem;  
+    text-align: center;
+    font-size: 1.6rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+
+}
+
+header .icons a .icons-react{
+ 
+    font-size: 1.8rem;
+
+   
+
+}
+header .icons a .icons-react:hover{
+ 
+    font-size: 1.8rem;
+    color: var(--green);
+   
+
+}
+
+/* header .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+} */
+
+header .icons #menu-bars{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header .icons #menu-bars {
+      display: inline-block;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a {
+      display: block;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 2rem;
+      background: #eee;
+    }
+    .home .home-slider .slide .content h3 {
+      font-size: 5rem;
+    }
+  }
+
+
+header .cart-items-container{
+  position: absolute;
+  top:100%; right: -100%;
+  height: calc(100vh - 9.5rem);
+  width: 35rem;
+  background: #fff;
+  padding:0 1.5rem;
+}
+
+header .cart-items-container.active{
+  right: 0;
+}
+
+header .cart-items-container .cart-item{
+  position: relative;
+  margin:2rem 0;
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+}
+
+header .cart-items-container .cart-item .fa-times{
+  position: absolute;
+  top:1rem; right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+header .cart-items-container .cart-item .fa-times:hover{
+  color:var(--main-color);
+}
+
+header .cart-items-container .cart-item img{
+  height: 7rem;
+}
+
+header .cart-items-container .cart-item .content h3{
+  font-size: 2rem;
+  color:var(--black);
+  padding-bottom: .5rem;
+}
+
+header .cart-items-container .cart-item .content .price{
+  font-size: 1.5rem;
+  color:var(--main-color);
+}
+
+header .cart-items-container .btn{
+  width: 100%;
+  text-align: center;
+}
