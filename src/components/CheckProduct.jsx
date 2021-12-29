@@ -10,16 +10,16 @@ function CheckProduct({ id, image, title, price, rating }) {
     });
   };
   return (
-    <div class="cart-item">
-      <span class="fas fa-times" >
+    <div className="cart-item">
+      <span className="fas fa-times" >
       <FaRegWindowClose onClick={removeFromBasket}/>
       </span> 
     
 
       <img src={image} alt="" />
-      <div class="content">
-        <h3>cart item {id}</h3>
-        <div class="price">$ {price}</div>
+      <div className="content">
+        <h3>cart item</h3>
+        <div className="price">$ {price}</div>
       </div>
     </div>
   );

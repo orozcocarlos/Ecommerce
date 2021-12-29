@@ -14,15 +14,15 @@ function Project({ id, title, image, description, price, rating, site }) {
     });
   };
   return (
-    <div class="box">
-      <div class="image">
+    <div className="box">
+      <div className="image">
         <img src={image} alt="" />
-        <a href={site} target="_blank" class="fas fa-heart">
+        <a href={site} target="_blank" className="fas fa-heart">
           <FaYoutube />
         </a>
       </div>
-      <div class="content">
-        <div class="stars">
+      <div className="content">
+        <div className="stars">
           {Array(rating)
             .fill()
             .map((_, i) => (
@@ -31,10 +31,10 @@ function Project({ id, title, image, description, price, rating, site }) {
         </div>
         <h3>{title}</h3>
         <p>{description}</p>
-        <button className="btn" onClick={addToBasket}>
+        <button classNameName="btn" onClick={addToBasket}>
           add to basket
         </button>
-        <span class="price">$ {price}</span>
+        <span className="price">$ {price}</span>
       </div>
     </div>
   );

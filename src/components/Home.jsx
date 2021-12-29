@@ -2,11 +2,11 @@ import "./home.css"
 function Home() {
   return (
 
-      <section class="home" id="home">
-        <div class="swiper-container home-slider">
-          <div class="swiper-wrapper wrapper">
-            <div class="swiper-slide slide">
-              <div class="content">
+      <section className="home" id="home">
+        <div className="swiper-container home-slider">
+          <div className="swiper-wrapper wrapper">
+            <div className="swiper-slide slide">
+              <div className="content">
                 <span>our special products</span>
                 <h3>products electronics</h3>
                 <p>
@@ -14,16 +14,16 @@ function Home() {
                   temporibus illo recusandae consectetur provident officia animi
                   fuga id incidunt mollitia.
                 </p>
-                <a href="#" class="btn">
+                <a href="#" className="btn">
                   Buy Now
                 </a>
               </div>
-              <div class="image">
+              <div className="image">
                 <img src="assets/images/Workshop.png" alt="" />
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div className="swiper-pagination"></div>
         </div>
       </section>
   
